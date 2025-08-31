@@ -1,0 +1,37 @@
+/* Make body look app-like on phones */
+html, body, #root { height: 100%; }
+body { margin: 0; background: #0b0f14; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #e6edf3; }
+
+/* Global container */
+.app-shell { max-width: 480px; margin: 0 auto; min-height: 100%; display: flex; flex-direction: column; }
+
+/* Top bar */
+.app-bar { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: #111827; border-bottom: 1px solid #1f2937; }
+.app-title { font-size: 16px; font-weight: 600; }
+
+/* Card */
+.card { background: #0f172a; border: 1px solid #1f2937; border-radius: 16px; padding: 14px; margin: 12px 16px; box-shadow: 0 8px 30px rgba(0,0,0,.25); }
+
+/* Buttons */
+.btn { appearance: none; border: 1px solid #1f2937; background: #111827; color: #e6edf3; border-radius: 10px; padding: 10px 14px; font-weight: 600; cursor: pointer; }
+.btn:disabled { opacity: .6; cursor: not-allowed; }
+.btn.primary { background: #2563eb; border-color: #1d4ed8; }
+.btn.row { display: inline-flex; gap: 8px; }
+
+/* Grid for images */
+.thumb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 14px; }
+.thumb { text-align: center; }
+.thumb img { width: 110px; height: auto; border-radius: 8px; border: 1px solid #1f2937; }
+.thumb canvas { width: 110px; border: 2px solid #ef4444; border-radius: 8px; margin-top: 6px; }
+
+/* Key/Value lines */
+.kv { display: grid; grid-template-columns: 110px 1fr; gap: 6px; font-size: 13px; }
+.kv .k { color: #9ca3af; }
+.kv .v { color: #e6edf3; word-break: break-all; }
+
+/* Spacer */
+.spacer { height: 8px; }
+
+/* Forms */
+.input { width: 100%; padding: 10px 12px; border-radius: 10px; background: #0b1220; border: 1px solid #1f2937; color: #e6edf3; }
+.form-row { display: grid; gap: 10px; }
